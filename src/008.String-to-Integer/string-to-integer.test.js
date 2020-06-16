@@ -50,4 +50,10 @@ describe("String to Integer (atoi)", () => {
     const expected = 0;
     expect(myAtoi(input)).toEqual(expected);
   });
+
+  test("Input:' -1', target=-1", () => {
+    const input = " -1";
+    const expected = -1;
+    expect(myAtoi(input)).toEqual(expected);
+  });
 });
