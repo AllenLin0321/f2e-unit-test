@@ -3,9 +3,10 @@
  * @return {number}
  */
 const myAtoi = function (str) {
-  const firstStrCode = str.charCodeAt(0);
+  const firstStrCode = str.trim().charCodeAt(0);
   if (firstStrCode >= 48 && firstStrCode < 57) {
-    return +str;
+    const strArr = str.split(" ");
+    return +strArr[0];
   } else if (firstStrCode === 45) {
     return +str;
   }
